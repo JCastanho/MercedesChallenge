@@ -3,8 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <title>Mercedes-Benz.io Frontend Developer Challenge for SINFO</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-
+	<div id="Products">
+		<div id="ProductDiv">
+			<img id="ProductImg" src="../images/img1.png" alt="Product 1">
+			<p id="ProductT"> Product 1 title</p> 
+			<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</img>
+			<div id="PriceNSigns">
+				<div id="Signs" class="minus-btn">
+					<img id="Sign" src="../images/minus.svg">
+				</div>
+				<div id="Quant">
+					<input type="text" name="name" value="0">
+				</div>
+				<div id="Signs" class="minus-btn">
+					<img id="Sign" src="../images/plus.svg">
+				</div>
+				<div id="Price">
+					<span>39,90 €</span>
+				</div>
+			</div>
+		</div>
+		<div id="ProductDiv">
+			<img id="ProductImg" src="../images/img2.png" alt="Product 2">
+			<p id="ProductT"> Product 2 title</p> 
+			<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</img>
+			<div id="PriceNSigns">
+				<div id="Signs" onclick="minusQ()">
+					<img id="Sign" src="../images/minus.svg">
+				</div>
+				<div id="Quant">
+					<span id="Q">0</span>
+				</div>
+				<div id="Signs" onclick="plusQ()">
+					<img id="Sign" src="../images/plus.svg">
+				</div>
+				<div id="Price">
+					<span>104,90 €</span>
+				</div>
+			</div>
+		</div>
+		<div id="ProductDiv">
+			<img id="ProductImg" src="../images/img3.png" alt="Product 3">
+			<p id="ProductT"> Product 3 title</p> 
+			<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</img>
+			<div id="PriceNSigns">
+				<div id="Signs">
+					<img id="Sign" src="../images/minus.svg">
+				</div>
+				<div id="Quant">
+					<span>0</span>
+				</div>
+				<div id="Signs">
+					<img id="Sign" src="../images/plus.svg">
+				</div>
+				<div id="Price">
+					<span>4,50 €</span>
+				</div>
+			</div>
+		</div>
+		<div id="Next">
+			<img src="../images/next.svg">
+		</div>
+	</div>
+	<div id="Total">
+		<p id="TotalV">_______</p>
+	</div>
+	<div id="Total">
+		<p id="TotalV">0,00 €</p>
+		<p id="TotalT"> Total:  </p>
+	</div>
 </body>
 </html>
