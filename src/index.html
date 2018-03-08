@@ -5,70 +5,205 @@
   <title>Mercedes-Benz.io Frontend Developer Challenge for SINFO</title>
   <link rel="stylesheet" href="styles.css">
   <script type="text/javascript" src="main.js"></script>
+  <script src="../vendor/lory.min.js"></script>
+	<script>
+    'use strict';
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var slider = document.querySelector('.js_slider');
+
+        lory(slider, {
+            slidesToScroll: 3
+        });
+    });
+</script>
 </head>
 <body>
-	<div id="Products">
-		<div id="ProductDiv">
-			<img id="ProductImg" src="../images/img1.png" alt="Product 1">
-			<p id="ProductT"> Product 1 title</p> 
-			<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</img>
-			<div id="PriceNSigns">
-				<div id="Signs" onclick="minusQ(1)">
-					<img id="Sign" src="../images/minus.svg">
-				</div>
-				<div class="Quant">
-					<span id="Q1">0</span>
-				</div>
-				<div id="Signs" onclick="plusQ(1)">
-					<img id="Sign" src="../images/plus.svg">
-				</div>
-				<div id="Price">
-					<span id="P1">39,90 €</span>
-				</div>
-			</div>
+	<div id="Products" class="slider js_slider">
+		<div id="Prev" class="js_prev prev" style="display: none" onclick="prev()">
+			<img src="../images/prev.svg">
 		</div>
-		<div id="ProductDiv">
-			<img id="ProductImg" src="../images/img2.png" alt="Product 2">
-			<p id="ProductT"> Product 2 title</p> 
-			<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</img>
-			<div id="PriceNSigns">
-				<div id="Signs" onclick="minusQ(2)">
-					<img id="Sign" src="../images/minus.svg">
-				</div>
-				<div class="Quant">
-					<span id="Q2">0</span>
-				</div>
-				<div id="Signs" onclick="plusQ(2)">
-					<img id="Sign" src="../images/plus.svg">
-				</div>
-				<div id="Price">
-					<span id="P2">104,90 €</span>
-				</div>
-			</div>
+		<div class="frame js_frame">
+			<ul class="slides js_slides">
+				<li class="js_slide">
+					<div id="ProductDiv">
+						<img id="ProductImg" src="../images/img1.png" alt="Product 1">
+						<p id="ProductT"> Product 1 title</p> 
+						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</img>
+						<div id="PriceNSigns">
+							<div id="Signs" onclick="minusQ(1)">
+								<img id="Sign" src="../images/minus.svg">
+							</div>
+							<div class="Quant">
+								<span id="Q1">0</span>
+							</div>
+							<div id="Signs" onclick="plusQ(1)">
+								<img id="Sign" src="../images/plus.svg">
+							</div>
+							<div id="Price">
+								<span id="P1">39,90 €</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="js_slide">
+					<div id="ProductDiv">
+						<img id="ProductImg" src="../images/img2.png" alt="Product 2">
+						<p id="ProductT"> Product 2 title</p> 
+						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</img>
+						<div id="PriceNSigns">
+							<div id="Signs" onclick="minusQ(2)">
+								<img id="Sign" src="../images/minus.svg">
+							</div>
+							<div class="Quant">
+								<span id="Q2">0</span>
+							</div>
+							<div id="Signs" onclick="plusQ(2)">
+								<img id="Sign" src="../images/plus.svg">
+							</div>
+							<div id="Price">
+								<span id="P2">104,90 €</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="js_slide">
+					<div id="ProductDiv">
+						<img id="ProductImg" src="../images/img3.png" alt="Product 3">
+						<p id="ProductT"> Product 3 title</p> 
+						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</img>
+						<div id="PriceNSigns">
+							<div id="Signs" onclick="minusQ(3)">
+								<img id="Sign" src="../images/minus.svg">
+							</div>
+							<div class="Quant">
+								<span id="Q3">0</span>
+							</div>
+							<div id="Signs" onclick="plusQ(3)">
+								<img id="Sign" src="../images/plus.svg">
+							</div>
+							<div id="Price">
+								<span id="P3">4,50 €</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="js_slide">
+					<div id="ProductDiv">
+						<img id="ProductImg" src="../images/img1.png" alt="Product 4">
+						<p id="ProductT"> Product 4 title</p> 
+						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</img>
+						<div id="PriceNSigns">
+							<div id="Signs" onclick="minusQ(4)">
+								<img id="Sign" src="../images/minus.svg">
+							</div>
+							<div class="Quant">
+								<span id="Q4">0</span>
+							</div>
+							<div id="Signs" onclick="plusQ(4)">
+								<img id="Sign" src="../images/plus.svg">
+							</div>
+							<div id="Price">
+								<span id="P4">39,90 €</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="js_slide">
+					<div id="ProductDiv">
+						<img id="ProductImg" src="../images/img1.png" alt="Product 5">
+						<p id="ProductT"> Product 5 title</p> 
+						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</img>
+						<div id="PriceNSigns">
+							<div id="Signs" onclick="minusQ(5)">
+								<img id="Sign" src="../images/minus.svg">
+							</div>
+							<div class="Quant">
+								<span id="Q5">0</span>
+							</div>
+							<div id="Signs" onclick="plusQ(5)">
+								<img id="Sign" src="../images/plus.svg">
+							</div>
+							<div id="Price">
+								<span id="P5">39,90 €</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="js_slide">
+					<div id="ProductDiv">
+						<img id="ProductImg" src="../images/img1.png" alt="Product 6">
+						<p id="ProductT"> Product 6 title</p> 
+						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</img>
+						<div id="PriceNSigns">
+							<div id="Signs" onclick="minusQ(6)">
+								<img id="Sign" src="../images/minus.svg">
+							</div>
+							<div class="Quant">
+								<span id="Q6">0</span>
+							</div>
+							<div id="Signs" onclick="plusQ(6)">
+								<img id="Sign" src="../images/plus.svg">
+							</div>
+							<div id="Price">
+								<span id="P6">39,90 €</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="js_slide">
+					<div id="ProductDiv">
+						<img id="ProductImg" src="../images/img1.png" alt="Product 7">
+						<p id="ProductT"> Product 7 title</p> 
+						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</img>
+						<div id="PriceNSigns">
+							<div id="Signs" onclick="minusQ(7)">
+								<img id="Sign" src="../images/minus.svg">
+							</div>
+							<div class="Quant">
+								<span id="Q7">0</span>
+							</div>
+							<div id="Signs" onclick="plusQ(7)">
+								<img id="Sign" src="../images/plus.svg">
+							</div>
+							<div id="Price">
+								<span id="P7">39,90 €</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="js_slide">
+					<div id="ProductDiv">
+						<img id="ProductImg" src="../images/img1.png" alt="Product 8">
+						<p id="ProductT"> Product 8 title</p> 
+						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</img>
+						<div id="PriceNSigns">
+							<div id="Signs" onclick="minusQ(8)">
+								<img id="Sign" src="../images/minus.svg">
+							</div>
+							<div class="Quant">
+								<span id="Q8">0</span>
+							</div>
+							<div id="Signs" onclick="plusQ(8)">
+								<img id="Sign" src="../images/plus.svg">
+							</div>
+							<div id="Price">
+								<span id="P8">39,90 €</span>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
-		<div id="ProductDiv">
-			<img id="ProductImg" src="../images/img3.png" alt="Product 3">
-			<p id="ProductT"> Product 3 title</p> 
-			<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</img>
-			<div id="PriceNSigns">
-				<div id="Signs" onclick="minusQ(3)">
-					<img id="Sign" src="../images/minus.svg">
-				</div>
-				<div id="Quant">
-					<span id="Q3">0</span>
-				</div>
-				<div id="Signs" onclick="plusQ(3)">
-					<img id="Sign" src="../images/plus.svg">
-				</div>
-				<div id="Price">
-					<span id="P3">4,50 €</span>
-				</div>
-			</div>
-		</div>
-		<div id="Next">
+		<div id="Next" class="js_next next" style="display: block;" onclick="next()">
 			<img src="../images/next.svg">
 		</div>
 	</div>

@@ -6,11 +6,30 @@ body {
 
 #Products{
 	display: inline-block;
-	width: 850px;
+	width: 1000px;
+}
+
+.frame{
+	position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+	width: 800px;
+}
+
+.slides {
+    display: inline-block;
+}
+
+li {
+	position: relative;
+	display: inline-block;
 }
 
 #ProductDiv {
 	float: left;
+	display: table;
 }
 
 #ProductImg {
@@ -31,6 +50,7 @@ body {
 	font-size: 12px;
 	line-height: 16px;
 	margin: 15px;
+	white-space: normal;
 }
 
 #PriceNSigns {
@@ -51,18 +71,6 @@ body {
 	width: 15px;
 	height: 15px;
 	margin: 7px;
-}
-
-#Quant {
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	background-color: #fff;
-	font-size: 16px;
-	text-align: center;
-	color: #000;
-	float: left;
-	margin-right: 2px;
 }
 
 .Quant {
@@ -95,6 +103,15 @@ span {
 #Next {
 	width: 20px;
 	height: 20px;
+	margin: 15px;
+	top: -334px;
+	left: 840px;
+	position: relative;
+}
+
+#Prev {
+	width: 20px;
+	height: 20px;
 	float: left;
 	margin: 15px;
 	top: 101px;
@@ -103,10 +120,10 @@ span {
 
 #Total {
 	display: inline-block;
-	width: 770px;
+	width: 820px;
 	height: 30px;
 	position: relative;
-	bottom: 10px;
+	bottom: 50px;
 }
 
 #TotalT {

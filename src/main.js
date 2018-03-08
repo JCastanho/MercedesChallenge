@@ -32,3 +32,18 @@ function minusQ(x){
     document.getElementById("TotalV").innerHTML = total.toFixed(2) + ' €';
 }
 
+function next(){
+    if(counter == 1){
+        document.getElementById("Next").style.display = "none";
+    }
+    counter += 1;
+    document.getElementById("Prev").style.display = "block";
+}
+
+function prev(){
+    document.getElementById("Prev").style.display = "none";
+    counter = 0;
+    document.getElementById("Next").style.display = "block";
+}
+
+
