@@ -14,17 +14,17 @@
 			<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</img>
 			<div id="PriceNSigns">
-				<div id="Signs" class="minus-btn">
+				<div id="Signs" onclick="minusQ(1)">
 					<img id="Sign" src="../images/minus.svg">
 				</div>
-				<div id="Quant">
-					<input type="text" name="name" value="0">
+				<div class="Quant">
+					<span id="Q1">0</span>
 				</div>
-				<div id="Signs" class="minus-btn">
+				<div id="Signs" onclick="plusQ(1)">
 					<img id="Sign" src="../images/plus.svg">
 				</div>
 				<div id="Price">
-					<span>39,90 €</span>
+					<span id="P1">39,90 €</span>
 				</div>
 			</div>
 		</div>
@@ -34,17 +34,17 @@
 			<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</img>
 			<div id="PriceNSigns">
-				<div id="Signs" onclick="minusQ()">
+				<div id="Signs" onclick="minusQ(2)">
 					<img id="Sign" src="../images/minus.svg">
 				</div>
-				<div id="Quant">
-					<span id="Q">0</span>
+				<div class="Quant">
+					<span id="Q2">0</span>
 				</div>
-				<div id="Signs" onclick="plusQ()">
+				<div id="Signs" onclick="plusQ(2)">
 					<img id="Sign" src="../images/plus.svg">
 				</div>
 				<div id="Price">
-					<span>104,90 €</span>
+					<span id="P2">104,90 €</span>
 				</div>
 			</div>
 		</div>
@@ -54,17 +54,17 @@
 			<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</img>
 			<div id="PriceNSigns">
-				<div id="Signs">
+				<div id="Signs" onclick="minusQ(3)">
 					<img id="Sign" src="../images/minus.svg">
 				</div>
 				<div id="Quant">
-					<span>0</span>
+					<span id="Q3">0</span>
 				</div>
-				<div id="Signs">
+				<div id="Signs" onclick="plusQ(3)">
 					<img id="Sign" src="../images/plus.svg">
 				</div>
 				<div id="Price">
-					<span>4,50 €</span>
+					<span id="P3">4,50 €</span>
 				</div>
 			</div>
 		</div>
@@ -73,7 +73,7 @@
 		</div>
 	</div>
 	<div id="Total">
-		<p id="TotalV">_______</p>
+		<p id="TotalD">_______</p>
 	</div>
 	<div id="Total">
 		<p id="TotalV">0,00 €</p>

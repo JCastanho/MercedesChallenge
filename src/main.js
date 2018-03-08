@@ -1,49 +1,46 @@
-/*var counter = 0;
+var counter = 0;
 var total = 0;
 
-var add = (function () {
-    return function () {return counter += 1;}
-})();
+/*function total() {
+    for (var i = 0; i < 2; i++) {
+        var q = document.getElementById("Q"+i).innerHTML;
+        var p = document.getElementById("P"+i).innerHTML;
+        total = parseInt(q) * parseInt(p)
+    }
+    document.getElementById("TotalV").innerHTML = total;
+}*/
 
-function plusQ(){
-    document.getElementById("Q").innerHTML = add();
+function plusQ(x){
+    var oldValue = document.getElementById("Q"+x).innerHTML;
+    var value = parseInt(oldValue) + 1;
+    document.getElementById("Q"+x).innerHTML = value;
+
+    var total = document.getElementById("TotalV").innerHTML;
+    var p = document.getElementById("P"+x).innerHTML;
+    console.log(document.getElementById("P"+x).innerHTML);
+    total = parseFloat(document.getElementById("TotalV").innerHTML.replace(/,/, '.')) + parseFloat(p.replace(/,/, '.'));
+    console.log(document.getElementById("TotalV").innerHTML);
+    console.log(total);
+    document.getElementById("TotalV").innerHTML = total.toFixed(2) + ' €';
 }
 
-var sub = (function () {
-    return function () {if(counter >= 1) {return counter -= 1;} else{ return counter = 0}}
-})();
-
-function minusQ(){
-    document.getElementById("Q").innerHTML = sub();
-}
-*/
-$('.minus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
- 
-    if (value > 1) {
-        value = value - 1;
-    } else {
+function minusQ(x){
+    var oldValue = document.getElementById("Q"+x).innerHTML;
+    if(parseInt(oldValue) > 1) {
+        var value = parseInt(oldValue) - 1;
+    }
+    else{
         value = 0;
     }
- 
-  $input.val(value);
- 
-});
-
-$('.plus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
- 
-    if (value < 100) {
-        value = value + 1;
-    } else {
-        value =100;
+    document.getElementById("Q"+x).innerHTML = value;
+    var total = document.getElementById("TotalV").innerHTML;
+    var p = document.getElementById("P"+x).innerHTML;
+    if(parseFloat(document.getElementById("TotalV").innerHTML.replace(/,/, '.')) - parseFloat(p.replace(/,/, '.')) > 0){
+        total = parseFloat(document.getElementById("TotalV").innerHTML.replace(/,/, '.')) - parseFloat(p.replace(/,/, '.'));
     }
- 
-    $input.val(value);
-});
+    else{
+        total = 0
+    }
+    document.getElementById("TotalV").innerHTML = total.toFixed(2) + ' €';
+}
+

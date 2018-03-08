@@ -65,6 +65,18 @@ body {
 	margin-right: 2px;
 }
 
+.Quant {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	font-size: 16px;
+	text-align: center;
+	color: #000;
+	float: left;
+	margin-right: 2px;
+}
+
 #Price {
 	width: 136px;
 	height: 30px;
@@ -106,6 +118,12 @@ span {
 }
 
 #TotalV {
+	float: right;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+#TotalD {
 	float: right;
 	font-size: 18px;
 	line-height: 24px;
