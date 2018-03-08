@@ -34,16 +34,16 @@ function minusQ(x){
 
 function next(){
     if(counter == 1){
-        document.getElementById("Next").style.display = "none";
+        document.getElementById("Next").style.visibility = "hidden";
     }
     counter += 1;
-    document.getElementById("Prev").style.display = "block";
+    document.getElementById("Prev").style.visibility = "visible";
 }
 
 function prev(){
-    document.getElementById("Prev").style.display = "none";
+    document.getElementById("Prev").style.visibility = "hidden";
     counter = 0;
-    document.getElementById("Next").style.display = "block";
+    document.getElementById("Next").style.visibility = "visible";
 }
 
 

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Mercedes-Benz.io Frontend Developer Challenge for SINFO</title>
-  <link rel="stylesheet" href="styles.css">
-  <script type="text/javascript" src="main.js"></script>
-  <script src="../vendor/lory.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Mercedes-Benz.io Frontend Developer Challenge for SINFO</title>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript" src="main.js"></script>
+  	<script src="../vendor/lory.min.js"></script>
 	<script>
-    'use strict';
+	'use strict';
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var slider = document.querySelector('.js_slider');
+	document.addEventListener('DOMContentLoaded', function() {
+	    var slider = document.querySelector('.js_slider');
 
-        lory(slider, {
-            slidesToScroll: 3
-        });
-    });
-</script>
+	    lory(slider, {
+	        slidesToScroll: 3
+	    });
+	});
+	</script>
 </head>
 <body>
 	<div id="Products" class="slider js_slider">
-		<div id="Prev" class="js_prev prev" style="display: none" onclick="prev()">
+		<div id="Prev" class="js_prev prev" style="visibility: hidden" onclick="prev()">
 			<img src="../images/prev.svg">
 		</div>
 		<div class="frame js_frame">
@@ -93,7 +93,7 @@
 				</li>
 				<li class="js_slide">
 					<div id="ProductDiv">
-						<img id="ProductImg" src="../images/img1.png" alt="Product 4">
+						<img id="ProductImg" src="../images/img4.png" alt="Product 4">
 						<p id="ProductT"> Product 4 title</p> 
 						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</img>
@@ -108,14 +108,14 @@
 								<img id="Sign" src="../images/plus.svg">
 							</div>
 							<div id="Price">
-								<span id="P4">39,90 €</span>
+								<span id="P4">49,90 €</span>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li class="js_slide">
 					<div id="ProductDiv">
-						<img id="ProductImg" src="../images/img1.png" alt="Product 5">
+						<img id="ProductImg" src="../images/img5.png" alt="Product 5">
 						<p id="ProductT"> Product 5 title</p> 
 						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</img>
@@ -130,14 +130,14 @@
 								<img id="Sign" src="../images/plus.svg">
 							</div>
 							<div id="Price">
-								<span id="P5">39,90 €</span>
+								<span id="P5">0,99 €</span>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li class="js_slide">
 					<div id="ProductDiv">
-						<img id="ProductImg" src="../images/img1.png" alt="Product 6">
+						<img id="ProductImg" src="../images/img6.png" alt="Product 6">
 						<p id="ProductT"> Product 6 title</p> 
 						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</img>
@@ -152,14 +152,14 @@
 								<img id="Sign" src="../images/plus.svg">
 							</div>
 							<div id="Price">
-								<span id="P6">39,90 €</span>
+								<span id="P6">80,50 €</span>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li class="js_slide">
 					<div id="ProductDiv">
-						<img id="ProductImg" src="../images/img1.png" alt="Product 7">
+						<img id="ProductImg" src="../images/img7.png" alt="Product 7">
 						<p id="ProductT"> Product 7 title</p> 
 						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</img>
@@ -174,14 +174,14 @@
 								<img id="Sign" src="../images/plus.svg">
 							</div>
 							<div id="Price">
-								<span id="P7">39,90 €</span>
+								<span id="P7">150,90 €</span>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li class="js_slide">
 					<div id="ProductDiv">
-						<img id="ProductImg" src="../images/img1.png" alt="Product 8">
+						<img id="ProductImg" src="../images/img8.png" alt="Product 8">
 						<p id="ProductT"> Product 8 title</p> 
 						<p id="ProductD"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</img>
@@ -196,14 +196,14 @@
 								<img id="Sign" src="../images/plus.svg">
 							</div>
 							<div id="Price">
-								<span id="P8">39,90 €</span>
+								<span id="P8">45,90 €</span>
 							</div>
 						</div>
 					</div>
 				</li>
 			</ul>
 		</div>
-		<div id="Next" class="js_next next" style="display: block;" onclick="next()">
+		<div id="Next" class="js_next next" style="visibility: visible;" onclick="next()">
 			<img src="../images/next.svg">
 		</div>
 	</div>
